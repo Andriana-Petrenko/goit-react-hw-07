@@ -3,12 +3,12 @@
     justify-content: center;
     gap:30px;
     flex-wrap: wrap;
-     }
+}
 
 .contact_list>li{
     background-color: rgba(206, 206, 216, 0.81); 
     border-radius: 8px;
-    min-width: 250px;
+    min-width: 340px;
     padding: 10px;
     display: flex;
     justify-content: space-between;

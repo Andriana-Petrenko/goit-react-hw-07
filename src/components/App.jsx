@@ -15,7 +15,7 @@ function App() {
   const error = useSelector(selectError);
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(fetchContacts());    
   }, [dispatch]);
 
   return (
@@ -23,8 +23,9 @@ function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
+      {loading && !error && <Loader />}
       <ContactList />
-      {loading && !error && <Loader/>}
+      
   </div>
   )
 }
